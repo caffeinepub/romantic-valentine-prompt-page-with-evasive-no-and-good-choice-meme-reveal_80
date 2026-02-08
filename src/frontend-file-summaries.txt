@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's Day proposal component with evasive \"No\" button that moves on hover/touch and \"Yes\" button that reveals a success message with meme image. Includes floating heart animations and romantic pink/white themed UI.",
+  "frontend/src/index.css": "Global styles with romantic pink/white OKLCH color system for both light and dark modes, including custom floating heart animation keyframes and romantic-themed color tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color palette tokens (romantic-light, romantic-medium, romantic-heart, romantic-yes, etc.) mapped to CSS variables for consistent theming throughout the app."
+}

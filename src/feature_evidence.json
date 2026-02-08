@@ -1,0 +1,96 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-romantic-valentine-prompt-ui-that-asks-the-user-will-you-be-my-valentine-with-two-prominent-options-yes-and-no",
+      "featureTitle": "Create a single-page romantic Valentine prompt UI that asks the user: “Will you be my Valentine?” with two prominent options: “Yes” and “No”.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-the-no-option-as-an-evasive-button-when-the-user-attempts-to-interact-with-it-mouse-hover-pointer-enter-on-desktop-touch-attempt-on-ipad-it-moves-to-a-new-on-screen-position-so-it-cannot-be-clicked",
+      "featureTitle": "Implement the “No” option as an evasive button: when the user attempts to interact with it (mouse hover/pointer enter on desktop; touch attempt on iPad), it moves to a new on-screen position so it cannot be clicked.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-when-the-user-clicks-yes-replace-the-prompt-with-a-celebratory-reveal-that-displays-a-meme-style-image-containing-the-text-good-choice",
+      "featureTitle": "When the user clicks “Yes”, replace the prompt with a celebratory reveal that displays a meme-style image containing the text “Good choice❤️”.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-romantic-themed-visual-design-using-a-pink-and-white-color-scheme-with-responsive-layout-that-works-well-on-ipad-chrome-in-both-portrait-and-landscape",
+      "featureTitle": "Apply a romantic-themed visual design using a pink and white color scheme, with responsive layout that works well on iPad Chrome in both portrait and landscape.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-required-generated-meme-image-as-a-static-frontend-asset-and-render-it-directly-from-the-frontend-do-not-fetch-it-from-the-backend",
+      "featureTitle": "Add the required generated meme image as a static frontend asset and render it directly from the frontend (do not fetch it from the backend).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

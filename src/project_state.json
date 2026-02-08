@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Interactive romantic-themed Valentine proposal web page (HTML/CSS/JS) for iPad Chrome, with Yes/No choices where No evades hover and Yes reveals a meme-style \"Good choice❤️\" image/message.",
+  "architectural_notes": [
+    "Use plain static HTML/CSS/JS with all assets locally referenced or embedded so it can run easily in iPad Chrome."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Meme-style image with bold caption text “Good choice❤️”, romantic pink/white aesthetic (valentine-good-choice-meme.dim_1024x1024.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-romantic-valentine-prompt-ui-that-asks-the-user-will-you-be-my-valentine-with-two-prominent-options-yes-and-no",
+      "title": "Create a single-page romantic Valentine prompt UI that asks the user: “Will you be my Valentine?” with two prominent options: “Yes” and “No”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-no-option-as-an-evasive-button-when-the-user-attempts-to-interact-with-it-mouse-hover-pointer-enter-on-desktop-touch-attempt-on-ipad-it-moves-to-a-new-on-screen-position-so-it-cannot-be-clicked",
+      "title": "Implement the “No” option as an evasive button: when the user attempts to interact with it (mouse hover/pointer enter on desktop; touch attempt on iPad), it moves to a new on-screen position so it cannot be clicked.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-yes-replace-the-prompt-with-a-celebratory-reveal-that-displays-a-meme-style-image-containing-the-text-good-choice",
+      "title": "When the user clicks “Yes”, replace the prompt with a celebratory reveal that displays a meme-style image containing the text “Good choice❤️”.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-romantic-themed-visual-design-using-a-pink-and-white-color-scheme-with-responsive-layout-that-works-well-on-ipad-chrome-in-both-portrait-and-landscape",
+      "title": "Apply a romantic-themed visual design using a pink and white color scheme, with responsive layout that works well on iPad Chrome in both portrait and landscape.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-meme-image-as-a-static-frontend-asset-and-render-it-directly-from-the-frontend-do-not-fetch-it-from-the-backend",
+      "title": "Add the required generated meme image as a static frontend asset and render it directly from the frontend (do not fetch it from the backend).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a simple romantic-themed interactive Valentine proposal web page (HTML/CSS/JS) runnable on iPad Chrome.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement Yes/No options where the No button moves away on hover to prevent clicking.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "On Yes click, display a meme-style image/message saying \"Good choice❤️\".",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Apply a pink and white romantic color scheme and styling.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Romantic Valentine prompt page with evasive “No” and “Good choice❤️” meme reveal",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

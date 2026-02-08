@@ -1,0 +1,124 @@
+{
+  "kind": "build_request",
+  "title": "Romantic Valentine prompt page with evasive “No” and “Good choice❤️” meme reveal",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page romantic Valentine prompt UI that asks the user: “Will you be my Valentine?” with two prominent options: “Yes” and “No”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create an interactive web page as a surprise for my girlfriend... to ask her to be my Valentine.\nThere should be two options: Yes or No."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page shows the question text “Will you be my Valentine?” in English.",
+        "Two buttons are visible and labeled exactly “Yes” and “No”.",
+        "The page has no additional primary flows beyond answering the Valentine prompt."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement the “No” option as an evasive button: when the user attempts to interact with it (mouse hover/pointer enter on desktop; touch attempt on iPad), it moves to a new on-screen position so it cannot be clicked.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "When she hovers her cursor over No, it should move away so she cannot click it, forcing her to click only on Yes."
+        ]
+      },
+      "acceptanceCriteria": [
+        "On pointer hover/enter, the “No” button relocates away from the pointer and remains within the visible viewport.",
+        "On touch devices (iPad Chrome), attempting to tap the “No” button causes it to move before a click/selection is registered.",
+        "It is not possible to successfully click the “No” button under normal use."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "When the user clicks “Yes”, replace the prompt with a celebratory reveal that displays a meme-style image containing the text “Good choice❤️”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "When she clicks Yes, show her a meme image telling her \"Good choice❤️\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking “Yes” reliably transitions the UI into a success/reveal state.",
+        "The reveal state displays a meme image that includes the text “Good choice❤️”.",
+        "After the reveal, the evasive “No” interaction is no longer shown/needed."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Apply a romantic-themed visual design using a pink and white color scheme, with responsive layout that works well on iPad Chrome in both portrait and landscape.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "The page should be themed romantically with a pink and white color scheme and be fully interactive... run it on my iPad using Chrome."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The page uses a cohesive pink/white romantic theme (background, typography, button styling).",
+        "UI elements remain readable and usable on iPad-sized viewports without horizontal scrolling.",
+        "The main content is centered and visually balanced in both portrait and landscape."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add the required generated meme image as a static frontend asset and render it directly from the frontend (do not fetch it from the backend).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "show her a meme image telling her \"Good choice❤️\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The meme image file exists under frontend/public/assets/generated and is referenced by the frontend via a static path.",
+        "The image loads correctly in the reveal state without any backend calls."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/components/ui.",
+    "Do not modify immutable hook and bootstrap files (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx).",
+    "No external databases or third-party auth providers; keep the experience fully client-side for this page."
+  ],
+  "nonGoals": [
+    "Implementing real authentication or user accounts.",
+    "Persisting the answer to the backend or storing analytics.",
+    "Adding additional pages, routing, or complex app features beyond the Valentine prompt and reveal."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Meme-style image with bold caption text “Good choice❤️”, romantic pink/white aesthetic (valentine-good-choice-meme.dim_1024x1024.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Use English for any user-facing text in the build request."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
